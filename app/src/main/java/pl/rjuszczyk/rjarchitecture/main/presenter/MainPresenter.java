@@ -34,6 +34,7 @@ public class MainPresenter extends AbsPresenter<MainAction, MainState>{
         }
     }
 
+    @Override
     protected MainState interact(MainState currentState, MainAction action) {
         if(action instanceof MainAction.MainActionStart) {
             if(currentState instanceof MainState.MainStateStopped) {
